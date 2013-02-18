@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	font-family:Georgia, "Times New Roman", Times, serif;
+	font-size:12px;
+	background-color:#FFF;
+}
+
+div
+{
+	width: 662px;
+	height: 298px;
+	background-color: #3b3b3b;
+	border: 1px solid #806850;
+	border-radius: 8px;
+	background-image: url(line.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+}
+div:after
+{
+	content:"";
+	display:block;
+	clear:both;
+}
+.go
+{
+	float:right;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	background:none;
+	background-image: url(go.png);
+	width: 56px;
+	height: 28px;
+	margin-right: 10px;
+	margin-top:20px;
+	cursor: pointer;
+	color:white;
+}
+.mon
+{
+	float:left;
+	border: 0;
+	padding: 0;
+	margin: 0;
+	background:none;
+	background-image: url(mon.png);
+	width: 39px;
+	height: 43px;
+	margin-right: 5px;
+	cursor: pointer;
+	margin-left: 10px;
+	margin-top:10px;
+}
+header
+{
+	font-weight:bolder;
+	font-size:20px;
+	color:white;
+	margin-top:20px;
+	text-align:center;
+}
+input
+{
+	margin:0 14px;
+}
+article
+{
+	margin:40px 10px;
+}
+h1
+{
+	color:#fdd51b;
+	font-size:30px;
+	font-weight:normal;
+}
+p
+{
+	font-size:13px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+	color:#999;
+}

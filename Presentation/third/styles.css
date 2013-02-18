@@ -1,0 +1,19 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	color:#FFF;
+	width:90%;
+}
+
+
+div {
+    background: #000; 
+    border-radius: 60px;         
+    border: 1px solid red;          
+    padding-right: 3%;      
+    }
+    
+
+
+

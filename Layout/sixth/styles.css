@@ -1,0 +1,104 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:13px;
+	font-weight:bold;
+	background-color:#FFF;
+	color:#000;
+	height:100%;
+	background-repeat:no-repeat;
+	background: #0f2121;
+}
+
+div
+{
+	border:1px solid #337d8f;
+	width:690px;
+	min-height:368px;
+	background:#1e3741;
+	border-radius:10px;
+}
+div:after
+{
+	content:"";
+	display:block;
+	clear:both;
+}
+ul
+{
+	float:left;
+	margin:0;
+	padding:0;
+}
+#horizontal
+{
+	margin:10px;
+	min-height: 25px;
+	padding-bottom:10px;
+}
+#horizontal li
+{
+	list-style-type:none;
+	display:inline-block;
+	height:25px;
+	background:#4b5f67;
+	padding-top:8px;
+	margin-right:-2px;
+}
+#horizontal li>a
+{
+	text-decoration:none;
+	color:#98a3a8;
+	font-size:12px;
+	margin: 10px;
+}
+
+#horizontal li>a:hover
+{
+	text-decoration:underline;
+	color:white;
+}
+
+
+#vertical li
+{
+	padding:10px;
+	list-style-type:none;
+	width:264px;
+	min-height:25px;
+	border-bottom:1px outset #98a3a8;
+}
+#vertical li:last-child
+{
+	border-bottom:none;
+}
+#vertical li>a
+{
+	display:inline-block;
+	height:100%;
+	width:100%;
+}
+#vertical li>a
+{
+	text-decoration:none;
+	color:#98a3a8;
+}
+#vertical li>a:hover
+{
+	color:white;
+}
+#vertical li:hover, #vertical li:hover a 
+{
+	background-color:#00968c;
+	color:white;
+}
+section
+{
+	float:left;
+}
+#horizontal ul .main 
+{
+	background:#1e3741;
+}

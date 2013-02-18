@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+body
+{
+	font-family:Helvetica, Arial, sans-serif;
+	background-color:#595959;
+	color:#ead68f;
+}
+
+table 
+{
+	border-collapse:collapse;
+	border-style:none;
+}
+td
+{
+	padding:5px;
+}
+
+.firstCol
+{
+	width:50%;
+}
+
+.circle
+{
+	display:inline;
+	position:absolute;
+	width:14px;
+	height:14px;
+	border-radius:50%;
+	background-color:#71b47a;
+	margin-top:8px;
+}
+span
+{
+	padding-left:20px;
+}
+
+.greyTxt
+{
+	color:#b4b4b4;
+}
+.redTxt
+{
+	color:#F00;
+	font-weight:bold;
+}
+.orangeTxt
+{
+	color:#F60;
+	font-weight:bold;
+}
+
+
+
+td:nth-child(2n+1)
+{
+	color: #e3e3e3;
+	font-style:italic;
+}
+
+
+td
+{
+	line-height:200%;
+}
+h1
+{
+	font-weight:normal;
+	color:#b4b4b4;
+}
+
+

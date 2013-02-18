@@ -1,0 +1,225 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+
+@import "compass/reset";
+@import "compass/css3";
+
+$pink: #d593ff;
+$purple: #9019f0;
+$font: "Times New Roman", Times, serif;
+$border: 1px solid black;
+$b-r: 12px;
+
+
+@mixin clearfix{
+  zoom:1;
+  &:after{
+    display:block; content:"";
+    height:0; clear:both; } }
+
+
+body
+{
+	font-family: $font;
+	color:white;
+	background: $purple;
+}
+header, #header-container, #logo-container, nav, section, aside, footer, article
+{
+	float:left;
+	@include clearfix;
+}
+header
+{
+	padding-left: 12px;
+}
+section
+{
+	padding-left: 8px;
+	margin-top: 10px;
+}
+#header-container
+{
+	width:100%;
+	padding:18px 10px;
+}
+
+#reg-form-container
+{
+	float:right;
+	padding-right:50px;
+	input
+	{
+		border: $border;
+		border-radius: 8px;
+		background: #b35ef3;
+		width:125px;
+	}
+}
+button
+{
+	background:none;
+	font-weight:bold;
+	&:hover
+	{
+		background: $purple;
+	}
+}
+#btn-register
+{
+	border-bottom: $border;
+	border-right: $border;
+	border-top: 1px solid white;
+	border-left: 1px solid white;
+	border-radius: 10px;
+	color:white;
+	padding: 5px 10px;
+	@include box-shadow(1px 1px 2px #333);
+}
+body>header
+{
+	background: $pink;
+	@include background(linear-gradient(color-stops($pink, $purple)));
+	width:100%;
+}
+nav, article
+{
+	border: $border;
+	border-radius: $b-r;
+}
+nav
+{
+	ul
+	{
+		a
+		{
+			color:white;
+			text-decoration:none;
+		}
+		ul
+		{
+			display:none;
+		}
+		li{
+			display:inline-block;
+			padding: 3px 10px 3px 5px;
+			&:hover 
+			{
+				ul{
+					display:block;
+					position:absolute;
+					background-color: rgba(184, 94, 255, 0.9);
+					border-radius: 6px;
+					li
+					{
+						display:block;
+						margin:5px;
+						padding: 5px;
+						border-bottom: $border;
+						&:last-of-type
+						{
+						border-bottom:none;
+					}
+					}
+				}
+			}
+		}
+	}
+	width:1060px;
+	font-size:18px;
+	margin:10px 10px 10px 18px;
+	padding:10px;
+}
+
+
+section
+{
+	footer{
+		p
+		{
+			font-size: 16px;
+		}
+	}
+	article
+	{
+		header
+		{
+			display:block;
+			width:100%;
+			padding:10px;
+			h1
+			{
+				font-size:18px;
+				font-weight:bold;
+			}
+		}
+		a
+		{
+			color: $pink;
+		}
+		margin:20px 10px;
+		padding:15px 10px;
+	}
+	width:1060px;
+	margin-bottom: 15px;
+}
+aside
+{
+	h2
+	{
+		font-size:14px;
+		font-weight:bold;
+		padding:4px;
+	}
+	width:250px;
+	padding-top:20px;
+	ul
+	{
+		margin-left:10px;
+		margin-right:30px;
+		margin-top:20px;
+		li
+		{
+			border:$border;
+			border-radius:5px;
+			ul
+			{
+				padding-left:20px;
+				li
+				{
+					border:none;
+					padding:2px;
+					margin:2px;
+					font-size:13px;
+					list-style-image: url(../images/li-dot.png);
+					
+				}
+			}
+			
+			padding:15px;
+			margin:5px;
+		}
+	}
+}
+p
+{
+	font-size:14px;
+	margin:5px;
+	line-height: 18px;
+}
+a:hover
+{
+	text-decoration:underline;
+	color: #999;
+}
+footer
+{
+	float:right;
+}
+body>footer
+{
+	width:100%;
+	text-align:center;
+}
